@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QOS RECIEPT</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .receipt-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 50px auto;
+        width: 400px;
+        height: 600px;
+        box-shadow: black 0px 0px 5px 0px;
+        text-align: center;
+        font-size: 12px;
+      }
+      .receipt-container {
+        width: 400px;
+        height: 550px;
+        box-shadow: black 0px 0px 5px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .receipt-container .heading {
+        margin-bottom: 3px;
+        font-weight: 600;
+      }
+      .main-logo {
+        width: 150px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+      .customer-details {
+        text-align: center;
+        width: 100%;
+        height: 160px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #fd6f3b;
+        color: white;
+      }
+      .customer-details h3{
+        font-size: 20px;
+      }
+      .customer-details h1{
+        font-size: 30px;
+        font-weight: 600;
+      }
+      .receipt-details-box {
+        padding: 15px 25px;
+      }
+      .receipt-details {
+        display: flex;
+        justify-content: space-between;
+      }
+      .receipt-details p{
+        font-size: 12px;
+      }
+      .receipt-details-hr {
+        border: dashed 1px #c8c8c8;
+        margin-top: -13px;
+      }
+      .merchant-details {
+        text-align: center;
+        font-size: 12px;
+      }
+      .merchant-details p:first-child {
+        text-transform: uppercase;
+        font-weight: 600;
+        padding-bottom: 0px;
+        margin-bottom: 05px;
+      }
+      .receipt-details-hrm {
+        border: dashed 1px #c8c8c8;
+        margin-bottom: 60px;
+      }
+      .grey-p {
+        color: #999999;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="receipt-main">
+        <div class="receipt-container">
+          <img class="main-logo" src="/img/QOSPAY.png" alt="qospay logo" />
+          <p class="heading">Transaction Receipt</p>
+          <div class="customer-details">
+            <h3>John Oche Idoko</h3>
+            <h1>NGN 8,000,000</h1>
+          </div>
+          <div class="receipt-details-box">
+            <div class="receipt-details">
+              <p>Reference</p>
+              <p>20237036060982</p>
+            </div>
+            <hr class="receipt-details-hr" />
+            <div class="receipt-details">
+              <p>Date</p>
+              <p>2023/07/06</p>
+            </div>
+            <hr class="receipt-details-hr" />
+            <div class="receipt-details">
+              <p>Payment Method</p>
+              <p>MTN</p>
+            </div>
+            <hr class="receipt-details-hr" />
+            <div class="merchant-details">
+              <p>mtn telecommunication nigeria</p>
+              <a href="">info@telecommunication.com</a>
+            </div>
+            <hr class="receipt-details-hrm" />
+            <span class="grey-p">
+              if you have an issue with the payment kindly reply or send an
+              email to <a href="">qosic@info.com</a>
+            </span>
+          </div>
+        </div>
+        <div>
+          <p class="grey-p">© QOS Pay 2023</p>
+          <p class="grey-p">Secured Payment for Africa</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
